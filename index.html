@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Document</title>
+
+    <style>
+
+        .banner {
+            height: 300px;
+        }
+
+        .debug-row {
+            border: 1px dashed yellow;
+        }
+
+        .debug {
+            border: 1px solid black;
+        }
+
+        #top-bar-container {
+            color: white;
+
+            background-color: #662483;
+            padding: 5px 15px;
+        }
+
+
+
+
+
+body {
+  padding : 10px ;
+  
+}
+
+#exTab1 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+#exTab2 h3 {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <!-- top bar -->
+        <div class="row debug-row" id="top-bar-container">
+            <div class="col-12">
+                top bar
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="row debug-row">
+            <div class="col-4 debug banner">
+                
+            </div>
+            <div class="col-4 debug banner">
+                
+            </div>
+            <div class="col-4 debug banner">
+                
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-1">
+                Sheshow
+            </div>
+            <div class="col-11">
+                <ul class="nav nav-tabs " role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="row">
+            <div class="col-1">
+                <ul>
+                    <li>Menu Item #</li>
+                    <li>Menu Item #</li>
+                    <li>Menu Item #</li>
+                    <li>Menu Item #</li>
+                    <li>Menu Item #</li>
+                    <li>Menu Item #</li>
+                </ul>
+            </div>
+            <div class="col-11">
+                <div class="tab-content">
+
+                    <div class="tab-pane" id="profile" role="tabpanel">
+                        <h1>Profile</h1>
+                    </div>
+
+                    <div class="tab-pane" id="messages" role="tabpanel">
+                        <h1>Messages</h1>
+                    </div>
+
+                    <div class="tab-pane" id="settings" role="tabpanel">
+                        <h1>Settings</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    
+
+    </div>
+    
+    
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
