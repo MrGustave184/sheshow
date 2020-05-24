@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" TYPE="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <!-- top bar -->
+        <div class="row debug-row " id="top-bar-container">
+            <div class="col-12 d-flex justify-content-end">
+                <div class="align-items-center mr-3">
+                    John Doe
+                </div>
+                <div class="align-items-center">
+                    <img src="images/person_icon.png" height="23rem" class="d-inline-block" >
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="row">
+            <div class="col-12 d-flex align-items-center justify-content-center debug banner">
+                <img src="images/banner_img.jpg" class="img-fluid" >
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-1">
+                Sheshow
+            </div>
+            <div class="col-11">
+                <ul class="nav nav-tabs " role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="row">
+            <div class="col-1">
+                <ul>
+                    <li>Menu Item #</li>
+                    <li>Menu Item #</li>
+                    <li>Menu Item #</li>
+                    <li>Menu Item #</li>
+                    <li>Menu Item #</li>
+                    <li>Menu Item #</li>
+                </ul>
+            </div>
+            <div class="col-11">
+                <div class="tab-content">
+
+                    <div class="tab-pane" id="profile" role="tabpanel">
+                        <!-- table -->
+                        <h1>Profile</h1>
+                    </div>
+
+                    <div class="tab-pane" id="messages" role="tabpanel">
+                        <h1>Messages</h1>
+                    </div>
+
+                    <div class="tab-pane" id="settings" role="tabpanel">
+                        <h1>Settings</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    
+
+    </div>
+    
+    
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
