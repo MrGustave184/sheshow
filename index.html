@@ -20,9 +20,12 @@
             border: 1px solid black;
         }
 
+        .main-purple {
+            background-color: #662483;
+        }
+
         #top-bar-container {
             color: white;
-
             background-color: #662483;
             padding: 5px 15px;
         }
@@ -43,6 +46,10 @@
             padding-left: 0;
         }
 
+        div#content-body li.nav-item {
+            padding: 5px;
+        }
+
         #sheshow {
             display: flex;
             justify-content: center;
@@ -53,6 +60,16 @@
             list-style-type: none;
         }
 
+        #content-body {
+            min-height: 400px;
+            padding-left: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        #vertical-nav {
+
+        }
     </style>
 </head>
 <body>
@@ -81,10 +98,10 @@
 
         <div id="content">
             <div class="row" id="content-header">
-                <div class="col-1" id="sheshow">
+                <div class="col-2" id="sheshow">
                     Sheshow
                 </div>
-                <div class="col-11" id="content-nav">
+                <div class="col-10" id="content-nav">
                     <ul class="nav nav-tabs " role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
@@ -103,20 +120,26 @@
             </div>
     
             <!-- Tab panes -->
-            <div class="row">
-                <div class="col-1">
-                    <ul id="left-menu">
-                        <li>Menu Item #</li>
-                        <li>Menu Item #</li>
-                        <li>Menu Item #</li>
-                        <li>Menu Item #</li>
-                        <li>Menu Item #</li>
-                        <li>Menu Item #</li>
-                    </ul>
+            <div class="row" id="content-body">
+                <div class="col-2 main-purple" id="vertical-nav">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                      </ul>
                 </div>
 
                 <!-- content -->
-                <div class="col-11">
+                <div class="col-10">
                     <div class="tab-content">
                         <div class="tab-pane" id="home" role="tabpanel">
                             <h1>Home</h1>
