@@ -4,95 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" TYPE="text/css">
     <title>Document</title>
-
-    <style>
-
-        .banner {
-            height: 300px;
-        }
-
-        .debug-row {
-            border: 1px dashed yellow;
-        }
-
-        .debug {
-            border: 1px solid black;
-        }
-
-        .main-purple {
-            background-color: #662483;
-        }
-
-        #top-bar-container {
-            color: white;
-            background-color: #662483;
-            padding: 5px 15px;
-        }
-
-        #content {
-            border-radius: 5px 5px 0 0;
-            border: 1px solid green;
-        }
-
-        #content-header {
-            margin-left: 0;
-            margin-right: 0;
-            background-color: #662483;
-            color: #fff;
-        }
-
-        #content-nav {
-            padding-left: 0;
-        }
-
-        div#content-body li.nav-item {
-            padding: 5px;
-        }
-
-        #sheshow {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #left-menu {
-            list-style-type: none;
-        }
-
-        #content-body {
-            min-height: 400px;
-            padding-left: 0;
-            margin-left: 0;
-            margin-right: 0;
-        }
-
-        #vertical-nav {
-
-        }
-    </style>
 </head>
 <body>
 
     <div class="container-fluid">
 
         <!-- top bar -->
-        <div class="row debug-row" id="top-bar-container">
-            <div class="col-12">
-                <div class="float-right">top bar</div>
+        <div class="row debug-row " id="top-bar-container">
+            <div class="col-12 d-flex align-items-center justify-content-end">
+                <div class=" mr-3">
+                    John Doe
+                </div>
+                <img src="images/person_icon.png" height="23rem" class="d-inline-block">
             </div>
         </div>
 
         <!-- Banner -->
-        <div class="row debug-row">
-            <div class="col-4 debug banner">
-                
-            </div>
-            <div class="col-4 debug banner">
-                    <!-- picture -->
-            </div>
-            <div class="col-4 debug banner">
-                
+        <div class="row">
+            <div class="col-12 d-flex align-items-center justify-content-center debug banner">
+                <img src="images/banner_img.jpg" class="img-fluid" >
             </div>
         </div>
 
@@ -160,12 +92,7 @@
                     </div>
                 </div>
             </div>
-
         </div>
-        
-
-        
-    
 
     </div>
     
