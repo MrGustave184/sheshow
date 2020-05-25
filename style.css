@@ -30,7 +30,6 @@
 
 #content {
     border-radius: 5px 5px 0 0;
-    border: 1px solid green;
 }
 
 #content-header {
@@ -42,6 +41,7 @@
 
 #content-nav {
     padding-left: 0;
+    padding-top: 0.3em;
 }
 
 div#content-body li.nav-item {
