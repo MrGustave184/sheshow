@@ -42,6 +42,7 @@
 #content-nav {
     padding-left: 0;
     padding-top: 0.3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 div#content-body li.nav-item {
@@ -52,6 +53,7 @@ div#content-body li.nav-item {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: x-large;
 }
 
 #left-menu {
@@ -63,4 +65,13 @@ div#content-body li.nav-item {
     padding-left: 0;
     margin-left: 0;
     margin-right: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-tabs > li > a.active {
+  color: #662483 !important;
+}
+
+.nav-tabs > li > a {
+  color: white;
 }
