@@ -1,7 +1,4 @@
-
-.banner{
-    min-height: 18rem;
-}
+/* ========================= DEBUG ============================== */
 
 .debug-row {
     border: 1px dashed yellow;
@@ -11,6 +8,35 @@
     border: 1px solid black;
 }
 
+.debug-height {
+    height: 500px;
+}
+
+.debug-background {
+    background-color: purple;
+}
+
+/* ========================= /DEBUG ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.banner{
+    min-height: 18rem;
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+}
+
+#banner-img {
+    padding: 17px 25px;
+    background-color: #fff;
+}
+
 .main-purple {
     background-color: #662483;
 }
@@ -18,14 +44,13 @@
 #top-bar-container {
     color: white;
     background-color: #662483;
-    padding: 5px 15px;
+    padding: 8px 15px;
 }
-
 
 #top-bar-container {
     color: white;
     background-color: #662483;
-    padding: 5px 15px;
+    padding: 8px 15px;
 }
 
 #content {
@@ -35,6 +60,8 @@
 #content-header {
     margin-left: 0;
     margin-right: 0;
+    padding-top: 5px;
+    border-radius: 5px 5px 0px 0px;
     background-color: #662483;
     color: #fff;
 }
@@ -75,3 +102,9 @@ div#content-body li.nav-item {
 .nav-tabs > li > a {
   color: white;
 }
+
+.nav, .nav-tabs, .nav-item, .nav-link {
+    border: none !important;
+    margin: 0 !important;
+}
+
