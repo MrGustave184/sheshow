@@ -36,16 +36,16 @@
                 <div class="col-10" id="content-nav">
                     <ul class="nav nav-tabs " role="tablist" id="n_tab">
                         <li class="nav-item ">
-                            <a class="nav-link active" data-toggle="tab" href="#home" role="tab">General information</a>
+                            <a class="nav-link tab-link active" data-toggle="tab" href="#home" role="tab">General information</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Speaker programme</a>
+                            <a class="nav-link tab-link" data-toggle="tab" href="#profile" role="tab">Speaker programme</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Your registration</a>
+                            <a class="nav-link tab-link" data-toggle="tab" href="#messages" role="tab">Your registration</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
+                            <a class="nav-link tab-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
                         </li>
                     </ul>
                 </div>
@@ -54,7 +54,7 @@
             <!-- Tab panes -->
             <div class="row" id="content-body">
                 <div class="col-2 main-purple" id="vertical-nav">
-                    <ul class="nav flex-column">
+                    <ul class="nav flex-column" id="vertical-nav-ul">
                         <li class="nav-item">
                           <a class="nav-link active" href="#">Home</a>
                         </li>
@@ -109,14 +109,13 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!--<script type="text/javascript">
-    function activaTab(tab){
-    $('.nav-tabs a[href="#' + tab + '"]').tab('show');
-    };
-    $("#n_tab li a").click(function() {
-        $(this).parent().prevAll().addClass('purpleTab');
-        $(this).parent().nextAll().addClass('purpleTab');
+
+<script>
+    $("#vertical-nav-ul li").on('click', function () {
+        $('li.activeTab').removeClass('activeTab');
+        $(this).addClass('activeTab');
     });
-</script>-->
+</script>
+
 </body>
 </html>
