@@ -91,6 +91,11 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#profile {
+    margin-top: 1.7rem;
+    padding: 15px;
+}
+
 .nav-tabs > li > a.active {
   color: #662483 !important;
 }
@@ -130,3 +135,22 @@ li a.nav-link:active {
     padding-right: 0; 
     color: #fff;
 }
+
+.table td, .table th {
+    border: none;
+}
+
+td {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Stripped table styles  */
+
+.table-striped > tbody > tr:nth-child(even) > td, .table-striped > tbody > tr:nth-child(even) > th {
+    background-color:rgba(102, 36, 131, 0.3);
+ }
+
+ .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+    background-color:rgba(102, 36, 131, 0.1);
+ }
+

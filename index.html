@@ -56,13 +56,13 @@
                 <div class="col-2 main-purple" id="vertical-nav">
                     <ul class="nav flex-column" id="vertical-nav-ul">
                         <li class="nav-item">
-                          <a class="nav-link active" href="#">Home</a>
+                          <a class="nav-link active activeTab" href="#">Home</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">Behavioural change initiatives</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Live media</a>
+                        <a class="nav-link" href="#">Live media</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link " href="#">On demand media</a>
@@ -88,7 +88,28 @@
     
                         <div class="tab-pane" id="profile" role="tabpanel">
                             <!-- table -->
-                            <h1>Profile</h1>
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                    <td>Initiative one</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Initiative two</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Initiative three</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Initiative four</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Initiative five</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Initiative six</td>
+                                    </tr>
+                                </tbody>
+                              </table>
                         </div>
     
                         <div class="tab-pane" id="messages" role="tabpanel">
@@ -105,16 +126,19 @@
 
     </div>
     
-    
-
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 <script>
     $("#vertical-nav-ul li").on('click', function () {
-        $('li.activeTab').removeClass('activeTab');
-        $(this).addClass('activeTab');
-    });
+        let activeElement = $("#vertical-nav-ul").find(".activeTab");
+        let clickedElement = $(this);
+
+        if(! clickedElement.hasClass('activeTab')) {
+            activeElement.removeClass('activeTab');
+            clickedElement.addClass('activeTab');
+        }
+    }); 
 </script>
 
 </body>
