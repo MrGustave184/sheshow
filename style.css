@@ -134,6 +134,9 @@ li a.nav-link:active {
     padding-left: 0;
     padding-right: 0; 
     color: #fff;
+    -webkit-box-shadow: 2px -1px 49px -15px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px -1px 49px -15px rgba(0,0,0,0.5);
+    box-shadow: 2px -1px 49px -15px rgba(0,0,0,0.5);
 }
 
 .table td, .table th {
