@@ -161,3 +161,49 @@ td {
  .nav-tabs li, .nav-tabs li a {
     border-bottom: none;
 }
+
+@media screen and (min-width: 577px) and (max-width: 991px) { 
+    .show-mobile-profile{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .show-mobile-profile{
+        display: none;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    .show-mobile-profile{
+        display: none;
+    }
+ }
+
+@media (max-width: 576px) { 
+    .container-fluid > .row > .d-flex > .out_profile {
+        color: #662483 ;
+        position: absolute;
+        left:0;
+        border-radius: 50%;
+        background-color: white;
+        width: auto;
+        height: auto;
+        padding: 0px 10px 0px 10px;
+        font-size: large;
+        font-weight: 600;
+    }
+    .profile-title{
+        color: #662483 ;
+        justify-content: center !important;
+    }
+    .person_icon_black{
+        border-radius: 50%;
+    }
+    .profile_details_titles{
+        color: #662483;
+        font-size: medium;
+        font-weight: 600;
+    }
+    
+ }
