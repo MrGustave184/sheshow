@@ -166,10 +166,16 @@ td {
     .show-mobile-profile{
         display: none;
     }
+    .show-mobile-home{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .show-mobile-profile{
+        display: none;
+    }
+    .show-mobile-home{
         display: none;
     }
  }
@@ -178,9 +184,15 @@ td {
     .show-mobile-profile{
         display: none;
     }
+    .show-mobile-home{
+        display: none;
+    }
  }
 
 @media (max-width: 576px) { 
+    .big-size-mode{
+        display: none;
+    }
     .container-fluid > .row > .d-flex > .out_profile {
         color: #662483 ;
         position: absolute;
@@ -205,5 +217,12 @@ td {
         font-size: medium;
         font-weight: 600;
     }
-    
+    .title-sheshow{
+        margin-left: auto;
+        margin-right: auto;
+        color:  #662483;
+        font-weight: bold;
+        font-size: x-large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
  }
