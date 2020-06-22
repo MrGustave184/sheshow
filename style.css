@@ -47,12 +47,6 @@
     padding: 8px 15px;
 }
 
-#top-bar-container {
-    color: white;
-    background-color: #662483;
-    padding: 8px 15px;
-}
-
 #content {
     border-radius: 5px 5px 0 0;
 }
@@ -137,7 +131,7 @@ li a.nav-link:active {
     /*-webkit-box-shadow: 2px -1px 49px -15px rgba(0,0,0,0.5);
     -moz-box-shadow: 2px -1px 49px -15px rgba(0,0,0,0.5);
     box-shadow: 2px -1px 49px -15px rgba(0,0,0,0.5);*/
-    box-shadow: 0 9px 0px 0px#662483, 0 -9px 0px 0px #662483,2px -1px 25px -15px rgba(0,0,0,0.5), 2px -1px 25px -15px rgba(0,0,0,0.5);
+    box-shadow: 0 9px 0px 0px#ffffff00, 0 -9px 0px 0px #ffffff00,2px -1px 25px -15px rgba(0,0,0,0.5), 2px -1px 25px -15px rgba(0,0,0,0.5);
 }
 
 .table td, .table th {
@@ -158,6 +152,8 @@ td {
     background-color:rgba(102, 36, 131, 0.1);
  }
 
+ /* /Stripped table styles  */
+
  .nav-tabs li, .nav-tabs li a {
     border-bottom: none;
 }
@@ -166,6 +162,7 @@ td {
     .show-mobile-profile{
         display: none;
     }
+
     .show-mobile-home{
         display: none;
     }
@@ -175,8 +172,13 @@ td {
     .show-mobile-profile{
         display: none;
     }
+
     .show-mobile-home{
         display: none;
+    }
+
+    #vertical-nav {
+        box-shadow: 0 9px 0px 0px#ffffff00, 0 -9px 0px 0px #ffffff00,2px -1px 25px -15px rgba(0,0,0,0.5), 2px -1px 25px -15px rgba(0,0,0,0.5);
     }
  }
 
@@ -184,6 +186,7 @@ td {
     .show-mobile-profile{
         display: none;
     }
+
     .show-mobile-home{
         display: none;
     }
@@ -193,6 +196,7 @@ td {
     .big-size-mode{
         display: none;
     }
+
     .container-fluid > .row > .d-flex > .out_profile {
         color: #662483 ;
         position: absolute;
@@ -205,18 +209,22 @@ td {
         font-size: large;
         font-weight: 600;
     }
+
     .profile-title{
         color: #662483 ;
         justify-content: center !important;
     }
+
     .person_icon_black{
         border-radius: 50%;
     }
+
     .profile_details_titles{
         color: #662483;
         font-size: medium;
         font-weight: 600;
     }
+    
     .title-sheshow{
         margin-left: auto;
         margin-right: auto;
@@ -225,4 +233,24 @@ td {
         font-size: x-large;
         font-family: Arial, Helvetica, sans-serif;
     }
+ }
+
+ #vertical-header {
+    background-color: #fff;
+    color: #662483;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .mobile-nav-item:hover {
+     cursor: pointer;
+ }
+
+ .nav-underline:hover {
+     text-decoration: underline;
+ }
+
+ .mobile-submenu {
+     background-color: #a279ad;
  }
