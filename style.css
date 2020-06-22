@@ -69,14 +69,24 @@
 }
 
 .title-sheshow{
-    margin-left: auto;
-    margin-right: auto;
     color:  #662483;
     font-weight: bold;
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#mobile-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-sheshow, .profile-button {
+    margin-left: 2rem;
+}
+
+.profile-button {
+    margin-right: 0.6rem;
+}
 /* ================== /MOBILE STYLES ======================= */
 
 #vertical-header {
@@ -161,6 +171,13 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#mobile-menu {
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 #profile {
     margin-top: 1.7rem;
     padding: 15px;
@@ -200,9 +217,7 @@ li a.nav-link:active {
     color: #662483 !important;
 }
 
-#vertical-nav {
-    padding-left: 0;
-    padding-right: 0; 
+#vertical-nav, #mobile-vertical-nav {
     color: #fff;
     /*-webkit-box-shadow: 2px -1px 49px -15px rgba(0,0,0,0.5);
     -moz-box-shadow: 2px -1px 49px -15px rgba(0,0,0,0.5);
@@ -240,7 +255,7 @@ td {
     }
 
     .big-size-mode{
-        display: unset;
+        display: block;
     }
 }
 

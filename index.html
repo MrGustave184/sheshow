@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" TYPE="text/css">
     <title>Document</title>
 </head>
 <body>
 
     <div class="container-fluid big-size-mode">
-
         <!-- top bar -->
         <div class="row" id="top-bar-container">
             <div class="col-12 d-flex align-items-center justify-content-end">
@@ -50,7 +50,7 @@
     
             <!-- Tab panes -->
             <div class="row" id="content-body">
-                <div class="col-3 col-xl-2 main-purple" id="vertical-nav">
+                <div class="col-3 col-xl-2 main-purple px-0" id="vertical-nav">
                     <ul class="nav flex-column" id="vertical-nav-ul">
                         <li class="nav-item">
                           <a class="nav-link active activeTab" href="#">Home</a>
@@ -112,7 +112,6 @@
                         <div class="tab-pane" id="messages" role="tabpanel">
                             <h1>Messages</h1>
                         </div>
-    
                     </div>
                 </div>
             </div>
@@ -121,14 +120,23 @@
 
     <div class="container-fluid show-mobile-home">
         <div class="row">
-            <nav class="navbar navbar-light bg-light col-12 py-3">
-                <div class="d-flex align-items-center justify-content-center title-sheshow">SHE SHOW</div>
-                <a href="profile.html" class="d-flex align-items justify-content-end">
-                    <img src="images/user_home.png" height="25rem" >
-                </a>
+            <nav class="navbar navbar-light bg-light col-12 py-3 align-items-center" id="mobile-navbar">
+                <div class="d-flex">
+                    <div id="mobile-menu-icon">
+                        <i class="fa fa-2x fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <div class="title-sheshow">
+                        SHE SHOW
+                    </div>
+                </div>
+                <div class="profile-button">
+                    <a href="profile.html">
+                        <img src="images/user_home.png" height="25rem" >
+                    </a>
+                </div>
             </nav>
         </div>
-    </div>
+    </div> 
     
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
