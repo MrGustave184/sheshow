@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" TYPE="text/css">
     <title>Document</title>
 </head>
 <body>
-
-    <div class="container-fluid big-size-mode">
+<div class="container-fluid">
+    <div class="big-size-mode">
         <!-- top bar -->
         <div class="row" id="top-bar-container">
             <div class="col-12 d-flex align-items-center justify-content-end">
@@ -118,39 +118,203 @@
         </div>
     </div>
 
-    <div class="container-fluid show-mobile-home">
+    <div class="show-mobile-home">
+
+
+
         <div class="row">
-            <nav class="navbar navbar-light bg-light col-12 py-3 align-items-center" id="mobile-navbar">
+            <nav class="col-12 navbar navbar-light bg-light py-3 align-items-center" id="mobile-navbar">
                 <div class="d-flex">
-                    <div id="mobile-menu-icon">
+                    <div class="navbar-toggler" id="mobile-menu-icon" data-toggle="collapse" data-target="#mobile-vertical-nav">
                         <i class="fa fa-2x fa-bars" aria-hidden="true"></i>
                     </div>
                     <div class="title-sheshow">
                         SHE SHOW
                     </div>
                 </div>
-                <div class="profile-button">
+                <div class="profile-button navbar-toggler">
                     <a href="profile.html">
                         <img src="images/user_home.png" height="25rem" >
                     </a>
                 </div>
             </nav>
         </div>
-    </div> 
+
+        <!-- Accordion Menu -->
+        <div class="row">
+            <div class="col-12 collapse navbar-collapse" id="mobile-vertical-nav">
+                <nav class="main-purple" id="mobile-vertical-menu">
+
+                    <div class="mobile-menu-section">
+                        <div class="nav-item nav-item-parent mobile-nav-item">
+                            <a class="nav-link" data-toggle="collapse" data-target="#collapse1">Home</a>
+                        </div>
+                        <div class="mobile-submenu collapse" id="collapse1" data-parent="#mobile-vertical-nav">
+                            <ul class="nav flex-column">
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Home 1</a>
+                                </li>
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Home 2</a>
+                                </li>
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Home 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mobile-menu-section">
+                        <div class="nav-item nav-item-parent mobile-nav-item">
+                            <a class="nav-link" data-toggle="collapse" data-target="#collapse2">Behavioural change initiatives</a>
+                        </div>
+                        <div class="mobile-submenu collapse" id="collapse2" data-parent="#mobile-vertical-nav">
+                            <ul class="nav flex-column">
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Behavioural change initiatives 1</a>
+                                </li>
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Behavioural change initiatives 2</a>
+                                </li>
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Behavioural change initiatives 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mobile-menu-section">
+                        <div class="nav-item nav-item-parent mobile-nav-item">
+                            <a class="nav-link" data-toggle="collapse" data-target="#collapse3">Live media</a>
+                        </div>
+                        <div class="mobile-submenu collapse" id="collapse3" data-parent="#mobile-vertical-nav">
+                            <ul class="nav flex-column">
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Live media 1</a>
+                                </li>
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Live media 2</a>
+                                </li>
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Live media 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  
+                    <div class="mobile-menu-section">
+                        <div class="nav-item nav-item-parent mobile-nav-item">
+                            <a class="nav-link" data-toggle="collapse" data-target="#collapse4">On demand media</a>
+                        </div>
+                        <div class="mobile-submenu collapse" id="collapse4" data-parent="#mobile-vertical-nav">
+                            <ul class="nav flex-column">
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">On demand media 1</a>
+                                </li>
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">On demand media 2</a>
+                                </li>
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">On demand media 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mobile-menu-section">
+                        <div class="nav-item nav-item-parent mobile-nav-item">
+                            <a class="nav-link" data-toggle="collapse" data-target="#collapse5">Exhibition</a>
+                        </div>
+                        <div class="mobile-submenu collapse" id="collapse5" data-parent="#mobile-vertical-nav">
+                            <ul class="nav flex-column">
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Exhibition 1</a>
+                                </li>
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Exhibition 2</a>
+                                </li>
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Exhibition 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mobile-menu-section">
+                        <div class="nav-item nav-item-parent mobile-nav-item">
+                            <a class="nav-link" data-toggle="collapse" data-target="#collapse6">Speaker Bereau</a>
+                        </div>
+                        <div class="mobile-submenu collapse" id="collapse6" data-parent="#mobile-vertical-nav">
+                            <ul class="nav flex-column">
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Speaker Bereau 1</a>
+                                </li>
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Speaker Bereau 2</a>
+                                </li>
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Speaker Bereau 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mobile-menu-section">
+                        <div class="nav-item nav-item-parent mobile-nav-item">
+                            <a class="nav-link" data-toggle="collapse" data-target="#collapse7">Career Oportunities</a>
+                        </div>
+                        <div class="mobile-submenu collapse" id="collapse7" data-parent="#mobile-vertical-nav">
+                            <ul class="nav flex-column">
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Career Oportunities 1</a>
+                                </li>
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Career Oportunities 2</a>
+                                </li>
+                                <li class="nav-item nav-underline">
+                                    <a class="nav-link" href="#">Career Oportunities 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav> 
+            </div>
+        </div>
+    </div>
+</div>
     
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script>
     $("#vertical-nav-ul li").on('click', function () {
         let activeElement = $("#vertical-nav-ul").find(".activeTab");
-        let clickedElement = $(this);
+        let clickedElement = $(this).find("a");
 
         if(! clickedElement.hasClass('activeTab')) {
             activeElement.removeClass('activeTab');
             clickedElement.addClass('activeTab');
         }
     }); 
+
+    $("nav#mobile-vertical-menu div.mobile-nav-item").on('click', function () {
+        let clickedElement = $(this);
+        let activeElement = $("#mobile-vertical-menu").find(".activeTab");
+
+        if(! clickedElement.hasClass('activeTab')) {
+            if( activeElement.length > 0) {
+                activeElement.removeClass('activeTab');
+            }
+
+            clickedElement.addClass('activeTab');
+        }
+    }); 
+
+    $("#mobile-menu-icon").click(function() {
+        $('#mobile-vertical-nav').toggleClass('gray-background');
+    });
 </script>
 
 </body>
