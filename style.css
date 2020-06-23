@@ -293,20 +293,15 @@ td {
 
 .mobile-submenu {
     font-weight: initial;
-    padding: 8px;
 }
 
 .gray-background {
     background-color: rgba(205, 202, 202, 0.52);
 }
 
-/* #mobile-vertical-menu {
-    width: 70%;
-    color: #fff;
-    padding-bottom: 1.5rem;
-    box-shadow: 0 9px 0px 0px#ffffff00, 0 -9px 0px 0px #ffffff00,2px -1px 25px -15px rgba(0,0,0,0.5), 2px -1px 25px -15px rgba(0,0,0,0.5);
-} */
-
+.submenu-ul {
+    padding: 8px;
+}
 
 /* -----------------------------------
             New Styles
@@ -320,7 +315,7 @@ td {
     background: rgba(0, 0, 0, 0.7);
     z-index: 998;
     opacity: 0;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.5s ease-in-out;
     top: 0;
 }
 
@@ -345,7 +340,8 @@ button.btn, button.btn:hover, button.btn:active, button.btn:focus, button.btn:ac
     z-index: 999;
     background: #662483;
     color: #fff;
-    transition: all 0.3s;
+    overflow-y: scroll;
+    transition: all 0.4s;
 }
 
 #sidebar.active {
