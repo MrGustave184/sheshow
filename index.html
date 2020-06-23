@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="style.css" TYPE="text/css">
     <title>Document</title>
 </head>
@@ -14,23 +14,7 @@
 
 <div class="container-fluid show-mobile-home">
 
-    <div class="row" id="content">
-        <nav class="col-12 navbar navbar-expand-lg navbar-light bg-light">
-            <div class="d-flex">
-                <button type="button" id="sidebarCollapse" class="btn">
-                    <i class="fa fa-2x fa-bars" aria-hidden="true"></i>
-                </button>
-                <div class="title-sheshow">
-                    SHE SHOW
-                </div>
-            </div>
-            <div class="profile-button navbar-toggler">
-                <a href="profile.html">
-                    <img src="images/user_home.png" height="25rem" >
-                </a>
-            </div>
-        </nav>
-    </div>
+
 
 
     <!-- sidebar -->
@@ -195,6 +179,36 @@
             </div>
         </div> -->
 
+        <div class="row">
+            <div class="col-12">
+                <nav id="sidebar">
+                    <div id="dismiss">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+                
+    
+    <!-- Content -->
+    <div class="row" id="content">
+        <nav class="col-12 navbar navbar-expand-lg navbar-light bg-light">
+            <div class="d-flex">
+                <button type="button" id="sidebarCollapse" class="btn">
+                    <i class="fa fa-2x fa-bars" aria-hidden="true"></i>
+                </button>
+                <div class="title-sheshow">
+                    SHE SHOW
+                </div>
+            </div>
+            <div class="profile-button navbar-toggler">
+                <a href="profile.html">
+                    <img src="images/user_home.png" height="25rem" >
+                </a>
+            </div>
+        </nav>
+    </div>
+
 </div>
 
 <div class="overlay"></div>
@@ -231,13 +245,17 @@
         $('#mobile-vertical-nav').toggleClass('gray-background');
     });
 
+    $('#dismiss, .overlay').on('click', function () {
+        $('#sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+    });
 
     $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').addClass('active');
-                $('.overlay').addClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
+        $('#sidebar').addClass('active');
+        $('.overlay').addClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+    });
 </script>
 
 </body>
