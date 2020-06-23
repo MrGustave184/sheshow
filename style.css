@@ -284,6 +284,7 @@ td {
 
 .mobile-menu-section {
     margin-bottom: 1rem;
+    font-size: large;
 }
 
 .mobile-nav-item {
@@ -345,7 +346,6 @@ button.btn, button.btn:hover, button.btn:active, button.btn:focus, button.btn:ac
     background: #662483;
     color: #fff;
     transition: all 0.3s;
-    /* overflow-y: scroll; */
 }
 
 #sidebar.active {
