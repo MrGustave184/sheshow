@@ -12,25 +12,25 @@
 
 
 
-<div class="container-fluid show-mobile-home">
+<div class="container-fluid">
 
-
-
+    <div class="show-mobile home">
         <div class="row">
             <div class="col-12">
-
+    
                 <!-- Sidebar -->
                 <nav id="sidebar">
-
-                    <!-- Sidebar header -->
+    
+                    <!-- Sidebar Header -->
                     <div id="sidebar-header">
                         <h3>SHE SHOW</h3>
                         <div id="dismiss">
                             <i class="fas fa-arrow-left"></i>
                         </div>
                     </div>
-
-                    <div class="clearfix mobile-menu-section">
+                    
+                    <!-- Sidebar Content -->
+                    <div class="mobile-menu-section">
                         <div class="nav-item nav-item-parent mobile-nav-item">
                             <a href="#collapse1" class="nav-link" data-toggle="collapse" data-target="#collapse1">Home</a>
                         </div>
@@ -48,7 +48,7 @@
                             </ul>
                         </div>
                     </div>
-
+    
                     <div class="mobile-menu-section">
                         <div class="nav-item nav-item-parent mobile-nav-item">
                             <a class="nav-link" href="#collapse2" data-toggle="collapse" data-target="#collapse2">Behavioural change initiatives</a>
@@ -67,7 +67,7 @@
                             </ul>
                         </div>
                     </div>
-
+    
                     <div class="mobile-menu-section">
                         <div class="nav-item nav-item-parent mobile-nav-item">
                             <a class="nav-link" href="#collapse3" data-toggle="collapse" data-target="#collapse3">Live media</a>
@@ -86,7 +86,7 @@
                             </ul>
                         </div>
                     </div>
-                  
+                    
                     <div class="mobile-menu-section">
                         <div class="nav-item nav-item-parent mobile-nav-item">
                             <a class="nav-link" href="#collapse4" data-toggle="collapse" data-target="#collapse4">On demand media</a>
@@ -105,7 +105,7 @@
                             </ul>
                         </div>
                     </div>
-
+    
                     <div class="mobile-menu-section">
                         <div class="nav-item nav-item-parent mobile-nav-item">
                             <a class="nav-link" href="#collapse5" data-toggle="collapse" data-target="#collapse5">Exhibition</a>
@@ -124,7 +124,7 @@
                             </ul>
                         </div>
                     </div>
-
+    
                     <div class="mobile-menu-section">
                         <div class="nav-item nav-item-parent mobile-nav-item">
                             <a class="nav-link" href="#collapse6" data-toggle="collapse" data-target="#collapse6">Speaker Bereau</a>
@@ -143,7 +143,7 @@
                             </ul>
                         </div>
                     </div>
-
+    
                     <div class="mobile-menu-section">
                         <div class="nav-item nav-item-parent mobile-nav-item">
                             <a class="nav-link" href="#collapse7" data-toggle="collapse" data-target="#collapse7">Career Oportunities</a>
@@ -162,30 +162,28 @@
                             </ul>
                         </div>
                     </div>
-
+    
                 </nav>
             </div>
-
         </div>
-                
-    
-    <!-- Content -->
-    <div class="row" id="content">
-        <nav class="col-12 navbar navbar-expand-lg navbar-light bg-light">
-            <div class="d-flex">
-                <button type="button" id="sidebarCollapse" class="btn">
-                    <i class="fa fa-2x fa-bars" aria-hidden="true"></i>
-                </button>
-                <div class="title-sheshow">
-                    SHE SHOW
+                    
+        <div class="row" id="content">
+            <nav class="col-12 navbar navbar-expand-lg navbar-light bg-light">
+                <div class="d-flex">
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fa fa-2x fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <div class="title-sheshow">
+                        SHE SHOW
+                    </div>
                 </div>
-            </div>
-            <div class="profile-button navbar-toggler">
-                <a href="profile.html">
-                    <img src="images/user_home.png" height="25rem" >
-                </a>
-            </div>
-        </nav>
+                <div class="profile-button navbar-toggler">
+                    <a href="profile.html">
+                        <img src="images/user_home.png" height="25rem" >
+                    </a>
+                </div>
+            </nav>
+        </div>
     </div>
 
 </div>
@@ -197,6 +195,19 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script>
+    function toggleActiveMovile() {
+        let clickedElement = $(this);
+        let activeElement = $("#sidebar").find(".activeTab");
+
+        if(! clickedElement.hasClass('activeTab')) {
+            if( activeElement.length > 0) {
+                activeElement.removeClass('activeTab');
+            }
+
+            clickedElement.addClass('activeTab');
+        }
+    }
+
     $("#vertical-nav-ul li").on('click', function () {
         let activeElement = $("#vertical-nav-ul").find(".activeTab");
         let clickedElement = $(this).find("a");
@@ -207,9 +218,10 @@
         }
     }); 
 
-    $("nav#mobile-vertical-menu div.mobile-nav-item").on('click', function () {
+
+    $("nav#sidebar div.mobile-nav-item").on('click', function () {
         let clickedElement = $(this);
-        let activeElement = $("#mobile-vertical-menu").find(".activeTab");
+        let activeElement = $("#sidebar").find(".activeTab");
 
         if(! clickedElement.hasClass('activeTab')) {
             if( activeElement.length > 0) {
@@ -221,7 +233,9 @@
     }); 
 
     $('#dismiss, .overlay').on('click', function () {
-        $('#sidebar').removeClass('active');
+        let sidebar = $('#sidebar');
+        sidebar.removeClass('active').find(".activeTab").removeClass('activeTab');
+        sidebar.find('.show').removeClass('show');
         $('.overlay').removeClass('active');
     });
 
