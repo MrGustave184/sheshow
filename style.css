@@ -78,15 +78,10 @@ ul {
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 0.5rem
+    
 }
 
-.title-sheshow, .profile-button {
-    margin-left: 1rem;
-}
-
-.profile-button {
-    margin-right: 0.6rem;
-}
+ 
 /* ================== /MOBILE STYLES ======================= */
 
 #vertical-header {
@@ -232,6 +227,33 @@ td {
     border-bottom: none;
 }
 
+    .go_back {
+        color: #662483 ;
+        -webkit-text-stroke: 3px #fff!important;
+        font-size: 1.5rem;
+    }
+
+    .bg-circle{
+        background: #fff;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile-title{
+        color: #662483 ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile_details_titles{
+        color: #662483;
+        font-size: medium;
+        font-weight: 600;
+    }
+
+    div#content > nav{
+        box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+    }
 /* ============== Media Queries ================== */
 
 /* Small devices (landscape phones, 576px and up) */
@@ -252,6 +274,8 @@ td {
     .big-size-mode{
         display: block;
     }
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
