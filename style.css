@@ -275,7 +275,9 @@ td {
         display: block;
     }
 
-
+    .overlay.active {
+        display: none !important;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
